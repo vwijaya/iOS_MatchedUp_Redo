@@ -22,6 +22,8 @@
 		09785BD3199B63C600BC21B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09785BB2199B63C600BC21B2 /* UIKit.framework */; };
 		09785BDB199B63C600BC21B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09785BD9199B63C600BC21B2 /* InfoPlist.strings */; };
 		09785BDD199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BDC199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m */; };
+		09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BE7199B698F00BC21B2 /* VWLoginViewController.m */; };
+		B515D22B7AEA4F2A8E1AF74E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E50A8E3F84D9C9706D26E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		09785BD8199B63C600BC21B2 /* iOS_MatchedUp_RedoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS_MatchedUp_RedoTests-Info.plist"; sourceTree = "<group>"; };
 		09785BDA199B63C600BC21B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		09785BDC199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_MatchedUp_RedoTests.m; sourceTree = "<group>"; };
+		09785BE6199B698F00BC21B2 /* VWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWLoginViewController.h; sourceTree = "<group>"; };
+		09785BE7199B698F00BC21B2 /* VWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWLoginViewController.m; sourceTree = "<group>"; };
+		111E50A8E3F84D9C9706D26E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73F114E1D3649229CE86C08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 				09785BB1199B63C600BC21B2 /* CoreGraphics.framework in Frameworks */,
 				09785BB3199B63C600BC21B2 /* UIKit.framework in Frameworks */,
 				09785BAF199B63C600BC21B2 /* Foundation.framework in Frameworks */,
+				B515D22B7AEA4F2A8E1AF74E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +96,7 @@
 				09785BD6199B63C600BC21B2 /* iOS_MatchedUp_RedoTests */,
 				09785BAD199B63C600BC21B2 /* Frameworks */,
 				09785BAC199B63C600BC21B2 /* Products */,
+				E73F114E1D3649229CE86C08 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +116,7 @@
 				09785BB0199B63C600BC21B2 /* CoreGraphics.framework */,
 				09785BB2199B63C600BC21B2 /* UIKit.framework */,
 				09785BD0199B63C600BC21B2 /* XCTest.framework */,
+				111E50A8E3F84D9C9706D26E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 				09785BBD199B63C600BC21B2 /* VWAppDelegate.h */,
 				09785BBE199B63C600BC21B2 /* VWAppDelegate.m */,
 				09785BC0199B63C600BC21B2 /* Main.storyboard */,
+				09785BE9199B8C5600BC21B2 /* Login */,
 				09785BC3199B63C600BC21B2 /* VWFirstViewController.h */,
 				09785BC4199B63C600BC21B2 /* VWFirstViewController.m */,
 				09785BC6199B63C600BC21B2 /* VWSecondViewController.h */,
@@ -157,6 +167,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		09785BE9199B8C5600BC21B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				09785BE6199B698F00BC21B2 /* VWLoginViewController.h */,
+				09785BE7199B698F00BC21B2 /* VWLoginViewController.m */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09785BE0199B63C600BC21B2 /* Build configuration list for PBXNativeTarget "iOS_MatchedUp_Redo" */;
 			buildPhases = (
+				AA3DB97B6D6247529DAD9408 /* Check Pods Manifest.lock */,
 				09785BA7199B63C600BC21B2 /* Sources */,
 				09785BA8199B63C600BC21B2 /* Frameworks */,
 				09785BA9199B63C600BC21B2 /* Resources */,
+				8B47C7B50871470885B98E9C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +271,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B47C7B50871470885B98E9C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA3DB97B6D6247529DAD9408 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09785BA7199B63C600BC21B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +312,7 @@
 				09785BC5199B63C600BC21B2 /* VWFirstViewController.m in Sources */,
 				09785BBB199B63C600BC21B2 /* main.m in Sources */,
 				09785BBF199B63C600BC21B2 /* VWAppDelegate.m in Sources */,
+				09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */,
 				09785BC8199B63C600BC21B2 /* VWSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,6 +435,7 @@
 		};
 		09785BE1199B63C600BC21B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73F114E1D3649229CE86C08 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -393,6 +449,7 @@
 		};
 		09785BE2199B63C600BC21B2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73F114E1D3649229CE86C08 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -463,6 +520,7 @@
 				09785BE2199B63C600BC21B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09785BE3199B63C600BC21B2 /* Build configuration list for PBXNativeTarget "iOS_MatchedUp_RedoTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +529,7 @@
 				09785BE5199B63C600BC21B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
