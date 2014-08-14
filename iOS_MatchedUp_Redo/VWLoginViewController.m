@@ -77,7 +77,42 @@
             }
         } else {
             // Valid login
+            [self updateUserInformation];
             [self performSegueWithIdentifier:@"loginToTabBarSegue" sender:self];
+        }
+    }];
+}
+
+#pragma mark - helpers
+-(void)updateUserInformation
+{
+    FBRequest *request = [FBRequest requestForMe];
+    [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+        if(!error) {
+            NSDictionary *userDictionary = (NSDictionary *)result;
+            NSMutableDictionary *userProfile = [[NSMutableDictionary alloc] initWithCapacity:8];
+            
+            if(userDictionary[kVWUserProfileNameKey])
+                userProfile[kVWUserProfileNameKey] = userDictionary[kVWUserProfileNameKey];
+            if(userDictionary[kVWUserProfileFirstNameKey])
+                userProfile[kVWUserProfileFirstNameKey] = userDictionary[kVWUserProfileFirstNameKey];
+            if(userDictionary[kVWUserProfileLocationKey][kVWUserProfileNameKey])
+                userProfile[kVWUserProfileLocationKey] = userDictionary[kVWUserProfileLocationKey][kVWUserProfileNameKey];
+            if(userDictionary[kVWUserProfileGenderKey])
+                userProfile[kVWUserProfileGenderKey] = userDictionary[kVWUserProfileGenderKey];
+            if(userDictionary[kVWUserProfileBirthdayKey])
+                userProfile[kVWUserProfileBirthdayKey] = userDictionary[kVWUserProfileBirthdayKey];
+            if(userDictionary[kVWUserProfileInterestedInKey])
+                userProfile[kVWUserProfileInterestedInKey] = userDictionary[kVWUserProfileInterestedInKey];
+            //if([pictureURL absoluteString])
+            //    userProfile[kVWUserProfilePictureURL] = [pictureURL absoluteString];
+            
+            if(userDictionary[kVWUserProfileLocationKey][kVWUserProfileNameKey]) {
+                userProfile[kVWUserProfileLocationKey] = userDictionary[kVWUserProfileLocationKey][kVWUserProfileNameKey];
+            }
+
+        } else {
+            NSLog(@"Error in Facebook request %@", error);
         }
     }];
 }

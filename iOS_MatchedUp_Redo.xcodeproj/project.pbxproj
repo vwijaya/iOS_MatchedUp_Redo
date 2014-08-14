@@ -23,6 +23,7 @@
 		09785BDB199B63C600BC21B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 09785BD9199B63C600BC21B2 /* InfoPlist.strings */; };
 		09785BDD199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BDC199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m */; };
 		09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BE7199B698F00BC21B2 /* VWLoginViewController.m */; };
+		09785BEC199B927700BC21B2 /* VWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BEB199B927700BC21B2 /* VWConstants.m */; };
 		B515D22B7AEA4F2A8E1AF74E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E50A8E3F84D9C9706D26E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,8 @@
 		09785BDC199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_MatchedUp_RedoTests.m; sourceTree = "<group>"; };
 		09785BE6199B698F00BC21B2 /* VWLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWLoginViewController.h; sourceTree = "<group>"; };
 		09785BE7199B698F00BC21B2 /* VWLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWLoginViewController.m; sourceTree = "<group>"; };
+		09785BEA199B927700BC21B2 /* VWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWConstants.h; sourceTree = "<group>"; };
+		09785BEB199B927700BC21B2 /* VWConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWConstants.m; sourceTree = "<group>"; };
 		111E50A8E3F84D9C9706D26E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E73F114E1D3649229CE86C08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +148,8 @@
 				09785BB7199B63C600BC21B2 /* InfoPlist.strings */,
 				09785BBA199B63C600BC21B2 /* main.m */,
 				09785BBC199B63C600BC21B2 /* iOS_MatchedUp_Redo-Prefix.pch */,
+				09785BEA199B927700BC21B2 /* VWConstants.h */,
+				09785BEB199B927700BC21B2 /* VWConstants.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				09785BBB199B63C600BC21B2 /* main.m in Sources */,
 				09785BBF199B63C600BC21B2 /* VWAppDelegate.m in Sources */,
 				09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */,
+				09785BEC199B927700BC21B2 /* VWConstants.m in Sources */,
 				09785BC8199B63C600BC21B2 /* VWSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
