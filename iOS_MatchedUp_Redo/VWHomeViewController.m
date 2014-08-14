@@ -21,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *dislikeButton;
 
 @property (strong, nonatomic) NSArray *photos;
+@property (strong, nonatomic) PFObject *photo;
 @property (nonatomic) int currentPhotoIndex;
 
 @end
@@ -51,6 +52,7 @@
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if(!error) {
             self.photos = objects;
+            [self queryForCurrentPhotoIndex];
         } else {
             NSLog (@"%@", error);
         }
@@ -77,6 +79,23 @@
 }
 
 - (IBAction)infoButtonPressed:(UIButton *)sender {
+}
+
+#pragma mark - helper methods
+- (void)queryForCurrentPhotoIndex
+{
+    if([self.photos count] > 0) {
+        self.photo = self.photos[self.currentPhotoIndex];
+        PFFile *file = self.photo[kVWPhotoPictureKey];
+        [file getDataInBackgroundWithBlock:^(NSData *data, NSError *error) {
+            if(!error) {
+                UIImage *image = [UIImage imageWithData:data];
+                self.photoImageView.image = image;
+            } else {
+                NSLog(@"%@", error);
+            }
+        }];
+    }
 }
 
 /*
