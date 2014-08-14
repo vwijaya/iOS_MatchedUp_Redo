@@ -13,6 +13,7 @@
 #pragma mark - User class
 
 extern NSString *const kVWUserProfileKey;
+extern NSString *const kVWUserProfileID;
 extern NSString *const kVWUserProfileNameKey;
 extern NSString *const kVWUserProfileFirstNameKey;
 extern NSString *const kVWUserProfileLocationKey;

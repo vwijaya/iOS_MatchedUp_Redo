@@ -13,6 +13,7 @@
 #pragma mark - User class
 
 NSString *const kVWUserProfileKey               = @"profile";
+NSString *const kVWUserProfileID                = @"id";
 NSString *const kVWUserProfileNameKey           = @"name";
 NSString *const kVWUserProfileFirstNameKey      = @"first_name";
 NSString *const kVWUserProfileLocationKey       = @"location";

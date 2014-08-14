@@ -130,12 +130,11 @@
 				09785BBD199B63C600BC21B2 /* VWAppDelegate.h */,
 				09785BBE199B63C600BC21B2 /* VWAppDelegate.m */,
 				09785BC0199B63C600BC21B2 /* Main.storyboard */,
-				09785BE9199B8C5600BC21B2 /* Login */,
 				09785BC3199B63C600BC21B2 /* VWFirstViewController.h */,
 				09785BC4199B63C600BC21B2 /* VWFirstViewController.m */,
-				09785BC6199B63C600BC21B2 /* VWSecondViewController.h */,
-				09785BC7199B63C600BC21B2 /* VWSecondViewController.m */,
 				09785BC9199B63C600BC21B2 /* Images.xcassets */,
+				09785BE9199B8C5600BC21B2 /* Login */,
+				43631A23199C92C900D05F9D /* Profile */,
 				09785BB5199B63C600BC21B2 /* Supporting Files */,
 			);
 			path = iOS_MatchedUp_Redo;
@@ -179,6 +178,15 @@
 				09785BE7199B698F00BC21B2 /* VWLoginViewController.m */,
 			);
 			name = Login;
+			sourceTree = "<group>";
+		};
+		43631A23199C92C900D05F9D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				09785BC6199B63C600BC21B2 /* VWSecondViewController.h */,
+				09785BC7199B63C600BC21B2 /* VWSecondViewController.m */,
+			);
+			name = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
