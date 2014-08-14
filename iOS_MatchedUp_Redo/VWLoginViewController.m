@@ -124,10 +124,11 @@
             if([pictureURL absoluteString])
                 userProfile[kVWUserProfilePictureURL] = [pictureURL absoluteString];
             
-            // Save/update in Parse
+            // Save/update user data in Parse
             [[PFUser currentUser] setObject:userProfile forKey:kVWUserProfileKey];
             [[PFUser currentUser] saveInBackground];
             
+            // Save/update image in Parse
             [self requestImage];
         } else {
             NSLog(@"Error in Facebook request %@", error);
@@ -175,6 +176,7 @@
              NSURLRequest *urlRequest = [NSURLRequest requestWithURL:
                                          profilePictureURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:4.0f];
              NSURLConnection *urlConnection = [[NSURLConnection alloc] initWithRequest:urlRequest delegate:self];
+             // see NSURLConnection delegate methods also.
              
              if(!urlConnection) {
                  NSLog(@"Failed to establish URL connection");
@@ -183,6 +185,7 @@
      }];
 }
 
+#pragma mark - NSURLConnection delegates
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     [self.imageData appendData:data];
