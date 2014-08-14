@@ -38,7 +38,7 @@
     // If user is already logged in
     if([PFUser currentUser] && [PFFacebookUtils isLinkedWithUser:[PFUser currentUser]]) {
         [self updateUserInformation];
-        [self performSegueWithIdentifier:@"loginToTabBarSegue" sender:self];
+        [self performSegueWithIdentifier:@"loginToHomeSegue" sender:self];
     }
 }
 
@@ -88,7 +88,7 @@
         } else {
             // Valid login
             [self updateUserInformation];
-            [self performSegueWithIdentifier:@"loginToTabBarSegue" sender:self];
+            [self performSegueWithIdentifier:@"loginToHomeSegue" sender:self];
         }
     }];
 }
@@ -117,8 +117,20 @@
                 userProfile[kVWUserProfileLocationKey] = userDictionary[kVWUserProfileLocationKey][kVWUserProfileNameKey];
             if(userDictionary[kVWUserProfileGenderKey])
                 userProfile[kVWUserProfileGenderKey] = userDictionary[kVWUserProfileGenderKey];
-            if(userDictionary[kVWUserProfileBirthdayKey])
+            if(userDictionary[kVWUserProfileBirthdayKey]) {
                 userProfile[kVWUserProfileBirthdayKey] = userDictionary[kVWUserProfileBirthdayKey];
+                
+                // Calculate age
+                NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+                [formatter setDateStyle:NSDateFormatterShortStyle];
+                NSDate *date = [formatter dateFromString:userDictionary[kVWUserProfileBirthdayKey]];
+                NSDate *now = [NSDate date];
+                NSTimeInterval seconds = [now timeIntervalSinceDate:date];
+                int age = seconds / 31536000;
+                userProfile[kVWUserProfileAgeKey] = @(age);
+            }
+            if(userDictionary[kVWUserProfileRelationshipStatusKey])
+                userProfile[kVWUserProfileRelationshipStatusKey] = userDictionary[kVWUserProfileRelationshipStatusKey];
             if(userDictionary[kVWUserProfileInterestedInKey])
                 userProfile[kVWUserProfileInterestedInKey] = userDictionary[kVWUserProfileInterestedInKey];
             if([pictureURL absoluteString])

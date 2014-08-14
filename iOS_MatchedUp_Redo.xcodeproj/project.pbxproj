@@ -14,8 +14,6 @@
 		09785BBB199B63C600BC21B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BBA199B63C600BC21B2 /* main.m */; };
 		09785BBF199B63C600BC21B2 /* VWAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BBE199B63C600BC21B2 /* VWAppDelegate.m */; };
 		09785BC2199B63C600BC21B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09785BC0199B63C600BC21B2 /* Main.storyboard */; };
-		09785BC5199B63C600BC21B2 /* VWFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BC4199B63C600BC21B2 /* VWFirstViewController.m */; };
-		09785BC8199B63C600BC21B2 /* VWSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BC7199B63C600BC21B2 /* VWSecondViewController.m */; };
 		09785BCA199B63C600BC21B2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09785BC9199B63C600BC21B2 /* Images.xcassets */; };
 		09785BD1199B63C600BC21B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09785BD0199B63C600BC21B2 /* XCTest.framework */; };
 		09785BD2199B63C600BC21B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09785BAE199B63C600BC21B2 /* Foundation.framework */; };
@@ -24,6 +22,10 @@
 		09785BDD199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BDC199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.m */; };
 		09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BE7199B698F00BC21B2 /* VWLoginViewController.m */; };
 		09785BEC199B927700BC21B2 /* VWConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 09785BEB199B927700BC21B2 /* VWConstants.m */; };
+		43631A26199CB00000D05F9D /* VWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43631A25199CB00000D05F9D /* VWHomeViewController.m */; };
+		43631A2D199CB72200D05F9D /* VWSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43631A2C199CB72200D05F9D /* VWSettingsViewController.m */; };
+		43631A30199CBD7A00D05F9D /* VWEditProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43631A2F199CBD7A00D05F9D /* VWEditProfileViewController.m */; };
+		43631A35199CC49A00D05F9D /* VWProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 43631A34199CC49A00D05F9D /* VWProfileViewController.m */; };
 		B515D22B7AEA4F2A8E1AF74E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 111E50A8E3F84D9C9706D26E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,10 +51,6 @@
 		09785BBD199B63C600BC21B2 /* VWAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWAppDelegate.h; sourceTree = "<group>"; };
 		09785BBE199B63C600BC21B2 /* VWAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWAppDelegate.m; sourceTree = "<group>"; };
 		09785BC1199B63C600BC21B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09785BC3199B63C600BC21B2 /* VWFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWFirstViewController.h; sourceTree = "<group>"; };
-		09785BC4199B63C600BC21B2 /* VWFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWFirstViewController.m; sourceTree = "<group>"; };
-		09785BC6199B63C600BC21B2 /* VWSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VWSecondViewController.h; sourceTree = "<group>"; };
-		09785BC7199B63C600BC21B2 /* VWSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWSecondViewController.m; sourceTree = "<group>"; };
 		09785BC9199B63C600BC21B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		09785BCF199B63C600BC21B2 /* iOS_MatchedUp_RedoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_MatchedUp_RedoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09785BD0199B63C600BC21B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -64,6 +62,14 @@
 		09785BEA199B927700BC21B2 /* VWConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWConstants.h; sourceTree = "<group>"; };
 		09785BEB199B927700BC21B2 /* VWConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWConstants.m; sourceTree = "<group>"; };
 		111E50A8E3F84D9C9706D26E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43631A24199CB00000D05F9D /* VWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWHomeViewController.h; sourceTree = "<group>"; };
+		43631A25199CB00000D05F9D /* VWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWHomeViewController.m; sourceTree = "<group>"; };
+		43631A2B199CB72200D05F9D /* VWSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWSettingsViewController.h; sourceTree = "<group>"; };
+		43631A2C199CB72200D05F9D /* VWSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWSettingsViewController.m; sourceTree = "<group>"; };
+		43631A2E199CBD7A00D05F9D /* VWEditProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWEditProfileViewController.h; sourceTree = "<group>"; };
+		43631A2F199CBD7A00D05F9D /* VWEditProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWEditProfileViewController.m; sourceTree = "<group>"; };
+		43631A33199CC49A00D05F9D /* VWProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWProfileViewController.h; sourceTree = "<group>"; };
+		43631A34199CC49A00D05F9D /* VWProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWProfileViewController.m; sourceTree = "<group>"; };
 		E73F114E1D3649229CE86C08 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,11 +136,12 @@
 				09785BBD199B63C600BC21B2 /* VWAppDelegate.h */,
 				09785BBE199B63C600BC21B2 /* VWAppDelegate.m */,
 				09785BC0199B63C600BC21B2 /* Main.storyboard */,
-				09785BC3199B63C600BC21B2 /* VWFirstViewController.h */,
-				09785BC4199B63C600BC21B2 /* VWFirstViewController.m */,
 				09785BC9199B63C600BC21B2 /* Images.xcassets */,
+				43631A32199CC48800D05F9D /* Profile */,
+				43631A31199CBD7E00D05F9D /* EditProfile */,
+				43631A27199CB65C00D05F9D /* Settings */,
+				43631A23199C92C900D05F9D /* Home */,
 				09785BE9199B8C5600BC21B2 /* Login */,
-				43631A23199C92C900D05F9D /* Profile */,
 				09785BB5199B63C600BC21B2 /* Supporting Files */,
 			);
 			path = iOS_MatchedUp_Redo;
@@ -180,11 +187,38 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		43631A23199C92C900D05F9D /* Profile */ = {
+		43631A23199C92C900D05F9D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				09785BC6199B63C600BC21B2 /* VWSecondViewController.h */,
-				09785BC7199B63C600BC21B2 /* VWSecondViewController.m */,
+				43631A24199CB00000D05F9D /* VWHomeViewController.h */,
+				43631A25199CB00000D05F9D /* VWHomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		43631A27199CB65C00D05F9D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				43631A2B199CB72200D05F9D /* VWSettingsViewController.h */,
+				43631A2C199CB72200D05F9D /* VWSettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		43631A31199CBD7E00D05F9D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				43631A2E199CBD7A00D05F9D /* VWEditProfileViewController.h */,
+				43631A2F199CBD7A00D05F9D /* VWEditProfileViewController.m */,
+			);
+			name = EditProfile;
+			sourceTree = "<group>";
+		};
+		43631A32199CC48800D05F9D /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				43631A33199CC49A00D05F9D /* VWProfileViewController.h */,
+				43631A34199CC49A00D05F9D /* VWProfileViewController.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -322,12 +356,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09785BC5199B63C600BC21B2 /* VWFirstViewController.m in Sources */,
 				09785BBB199B63C600BC21B2 /* main.m in Sources */,
+				43631A35199CC49A00D05F9D /* VWProfileViewController.m in Sources */,
 				09785BBF199B63C600BC21B2 /* VWAppDelegate.m in Sources */,
 				09785BE8199B698F00BC21B2 /* VWLoginViewController.m in Sources */,
+				43631A26199CB00000D05F9D /* VWHomeViewController.m in Sources */,
+				43631A2D199CB72200D05F9D /* VWSettingsViewController.m in Sources */,
 				09785BEC199B927700BC21B2 /* VWConstants.m in Sources */,
-				09785BC8199B63C600BC21B2 /* VWSecondViewController.m in Sources */,
+				43631A30199CBD7A00D05F9D /* VWEditProfileViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
